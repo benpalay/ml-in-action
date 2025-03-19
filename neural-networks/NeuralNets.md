@@ -19,6 +19,8 @@ Each neuron in a hidden layer is connected to all inputs. The computation in a n
 
    Here, \( W_1, W_2, ..., W_5 \) are the weights, \( X_1, X_2, ..., X_5 \) are the inputs, and \( b \) is the bias.
 
+Think of bias like this: if you're predicting house prices, even the smallest house will have some base cost. That's similar to what bias represents.
+
 2. **Activation Function**: A nonlinear **activation function** is applied to \( Z_1 \) to introduce nonlinearity into the model. Without this, the output would remain a linear combination of inputs, limiting the model's ability to solve complex problems. Common activation functions include sigmoid, ReLU, and tanh.
 
 - **Activation Functions**: See [activation.py](src/activation.py) for implementations of various activation functions.
@@ -48,7 +50,7 @@ The repository includes test files to verify the correctness of each component:
 Additional helper functions are provided in [utils.py](src/utils.py) to support the implementation.
 
 
-- **Example of Input Data Handling**: Check out [mnist_example.py](examples/mnist_example.py) for an example of loading and processing input data, and [xor_example.py](examples/xor_example.py) for a simpler XOR problem example.
+- **Example of Input Data Handling**: Check out [mnist_example.py](examples/mnist_example.py) for an example of loading and processing input data (look in the data folder for the datasets), and [xor_example.py](examples/xor_example.py) for a simpler XOR problem example.
 - **Notebook for Visualization**: See [neural_network_visualization.ipynb](notebooks/neural_network_visualization.ipynb) for a visual representation of the network structure.
 - **Step-by-Step Backpropagation Notebook**: Explore [step_by_step_backprop.ipynb](notebooks/step_by_step_backprop.ipynb) for a detailed walkthrough of the process.
 
