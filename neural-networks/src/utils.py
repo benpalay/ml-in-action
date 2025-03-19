@@ -1,3 +1,5 @@
+import numpy as np
+
 def shuffle_data(data, labels):
     indices = np.arange(len(data))
     np.random.shuffle(indices)
